@@ -5,6 +5,9 @@ import java.util.UUID;
 
 public class Invoice {
   private UUID id;
+  private String from;
+  private String title;
+  private String category;
   private float amountDue;
   private Date uploadDate;
   private Date dueDate;
