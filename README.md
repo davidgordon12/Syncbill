@@ -7,5 +7,13 @@ A straightforward and streamlined application designed for effortless bill and i
 - Data Privacy: Your information remains secure and private within the app.
 - Self-hosted: No cloud integration. Everything stays locally on your device.
 
+## Hosting
+### Prerequisites
+- Python 3
+- Java 20
+- Node JS
+
+Synbill is currently a work-in-progress and will be updated with instructions on how to build at a later date.
+
 ## Licence
 Syncbill follows the GNU General Public License (GPL) version 3.0, a widely recognized open-source license that emphasizes the principles of freedom and collaboration. Under this license, Syncbill's users have the right to use, modify, and distribute the software and any derivative works, while ensuring that these rights are preserved for others as well.
