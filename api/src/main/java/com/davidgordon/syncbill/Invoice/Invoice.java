@@ -19,6 +19,31 @@ public class Invoice {
   public void setId(UUID id) {
     this.id = id;
   }
+
+  public String getFrom() {
+    return from;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String category) {
+    this.category = category;
+  }
+
+  public void setFrom(String from) {
+    this.from = from;
+  }
+
   public float getAmountDue() {
     return amountDue;
   }
