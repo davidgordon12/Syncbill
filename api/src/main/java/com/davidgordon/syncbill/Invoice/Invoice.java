@@ -7,7 +7,7 @@ public class Invoice {
   private UUID id;
   private String from;
   private String title;
-  private String category;
+  private InvoiceCategory category;
   private float amountDue;
   private Date uploadDate;
   private Date dueDate;
@@ -24,6 +24,10 @@ public class Invoice {
     return from;
   }
 
+  public void setFrom(String from) {
+    this.from = from;
+  }
+
   public String getTitle() {
     return title;
   }
@@ -32,39 +36,42 @@ public class Invoice {
     this.title = title;
   }
 
-  public String getCategory() {
+  public InvoiceCategory getCategory() {
     return category;
   }
 
-  public void setCategory(String category) {
+  public void setCategory(InvoiceCategory category) {
     this.category = category;
   }
-
-  public void setFrom(String from) {
-    this.from = from;
-  }
-
+ 
   public float getAmountDue() {
     return amountDue;
   }
+
   public void setAmountDue(float amountDue) {
     this.amountDue = amountDue;
   }
+
   public Date getUploadDate() {
     return uploadDate;
   }
+
   public void setUploadDate(Date uploadDate) {
     this.uploadDate = uploadDate;
   }
+
   public Date getDueDate() {
     return dueDate;
   }
+
   public void setDueDate(Date dueDate) {
     this.dueDate = dueDate;
   }
+
   public Date getDateRecieved() {
     return dateRecieved;
   }
+
   public void setDateRecieved(Date dateRecieved) {
     this.dateRecieved = dateRecieved;
   }
