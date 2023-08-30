@@ -20,6 +20,7 @@ public class InvoiceConfig {
       invoice.setTitle("Mortgage");
       invoice.setCategory(InvoiceCategory.MORTGAGE);
       invoice.setAmountDue(1727.27f);
+      invoice.setUploadDate(LocalDate.now());
       invoice.setDateRecieved(LocalDate.now().minusDays(3));
       invoice.setDueDate(LocalDate.now().plusDays(15));
 
