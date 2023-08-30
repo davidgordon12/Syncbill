@@ -1,17 +1,23 @@
 package com.davidgordon.syncbill.Invoice;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.UUID;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table
 public class Invoice {
+  @Id
   private UUID id;
   private String from;
   private String title;
   private InvoiceCategory category;
   private float amountDue;
-  private Date uploadDate;
-  private Date dueDate;
-  private Date dateRecieved;
+  private LocalDate uploadDate;
+  private LocalDate dueDate;
+  private LocalDate dateRecieved;
   
   public UUID getId() {
     return id;
@@ -52,27 +58,27 @@ public class Invoice {
     this.amountDue = amountDue;
   }
 
-  public Date getUploadDate() {
+  public LocalDate getUploadDate() {
     return uploadDate;
   }
 
-  public void setUploadDate(Date uploadDate) {
+  public void setUploadDate(LocalDate uploadDate) {
     this.uploadDate = uploadDate;
   }
 
-  public Date getDueDate() {
+  public LocalDate getDueDate() {
     return dueDate;
   }
 
-  public void setDueDate(Date dueDate) {
+  public void setDueDate(LocalDate dueDate) {
     this.dueDate = dueDate;
   }
 
-  public Date getDateRecieved() {
+  public LocalDate getDateRecieved() {
     return dateRecieved;
   }
 
-  public void setDateRecieved(Date dateRecieved) {
+  public void setDateRecieved(LocalDate dateRecieved) {
     this.dateRecieved = dateRecieved;
   }
 }
