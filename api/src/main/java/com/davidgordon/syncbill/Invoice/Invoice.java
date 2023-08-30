@@ -3,6 +3,8 @@ package com.davidgordon.syncbill.Invoice;
 import java.time.LocalDate;
 import java.util.UUID;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,8 +12,9 @@ import jakarta.persistence.Table;
 @Table
 public class Invoice {
   @Id
+  @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;
-  private String from;
+  private String sender;
   private String title;
   private InvoiceCategory category;
   private float amountDue;
@@ -26,12 +29,12 @@ public class Invoice {
     this.id = id;
   }
 
-  public String getFrom() {
-    return from;
+  public String getSender() {
+    return sender;
   }
 
-  public void setFrom(String from) {
-    this.from = from;
+  public void setSender(String sender) {
+    this.sender = sender;
   }
 
   public String getTitle() {
